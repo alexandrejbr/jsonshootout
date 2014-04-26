@@ -8,10 +8,11 @@ case class More(int: Double, string: String)
 
 object Main extends App {
 
-  val example = Example("foo", 1, Other("bar \"with\" quotes ", List(More(1 / 3, "one"), More(2.0, "two"))))
+  //val example = Example("foo", 1, Other("bar \"with\" quotes ", List(More(1 / 3, "one"), More(2.0, "two"))))
+  val example = Example("foo", 1, Other("bar \"with\" quotes ", (1 to 5000).map(i => More(i, i.toString)).toList))
   val Alternatives = List(LiftJson, SprayJson, PlayJson, Json4SNative, Json4SJackson)
   val unit = MICROSECONDS
-  val iterations = 1000000
+  val iterations = 1000
 
   println(s"Bechmarking $iterations iterations, in $unit")
 
