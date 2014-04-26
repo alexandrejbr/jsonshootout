@@ -24,8 +24,8 @@ object Main extends App {
     println()
 
     val sample = alternative.serialize(example)
-    println("serialized: " + sample)
-    println("deserialized: " + alternative.deserialize(sample))
+    //println("serialized: " + sample)
+    //println("deserialized: " + alternative.deserialize(sample))
     println()
 
     val serializeResults = Mark.measure(iterations, unit) {
