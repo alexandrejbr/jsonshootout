@@ -93,7 +93,7 @@ object SprayJson extends JsonLibrary {
 
   val name = "Spray"
   def serialize(ex: Example) = ex.toJson.compactPrint
-  def deserialize(json: String) = json.asJson.convertTo[Example]
+  def deserialize(json: String) = json.parseJson.convertTo[Example]
 }
 
 // Play.
