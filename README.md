@@ -1,6 +1,6 @@
 Results
 ============
-
+```sh
 [info] Running benchmarks.Main 
 [info] Bechmarking 1000 iterations, in MICROSECONDS
 [info] 
@@ -108,3 +108,4 @@ Results
 [info] 95%   14808
 [info] 99%   16331
 [info] mean  12323
+```
